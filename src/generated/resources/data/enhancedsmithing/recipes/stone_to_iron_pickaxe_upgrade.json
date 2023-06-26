@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhancedsmithing:refined_iron_ingot"
+  },
+  "base": {
+    "item": "minecraft:stone_pickaxe"
+  },
+  "result": {
+    "item": "minecraft:iron_pickaxe"
+  },
+  "template": {
+    "item": "enhancedsmithing:iron_upgrade_smithing_template"
+  }
+}

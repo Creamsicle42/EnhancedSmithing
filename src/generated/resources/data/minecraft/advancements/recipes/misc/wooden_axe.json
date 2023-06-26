@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:impossible"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:wooden_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:wooden_axe"
+    ]
+  },
+  "sends_telemetry_event": false
+}

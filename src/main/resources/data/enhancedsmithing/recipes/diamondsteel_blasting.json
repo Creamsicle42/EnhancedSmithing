@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "enhancedsmithing:diamondsteel_compound"
+  },
+  "result": {
+      "item":"enhancedsmithing:diamondsteel_nugget",
+      "count": 2
+  }
+}

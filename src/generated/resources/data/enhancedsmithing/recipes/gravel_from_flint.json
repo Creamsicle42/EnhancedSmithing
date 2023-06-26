@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gravel"
+    }
+  },
+  "pattern": [
+    "GG",
+    "G "
+  ],
+  "result": {
+    "item": "minecraft:flint"
+  },
+  "show_notification": true
+}

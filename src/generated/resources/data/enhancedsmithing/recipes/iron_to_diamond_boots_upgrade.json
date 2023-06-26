@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhancedsmithing:diamondsteel_ingot"
+  },
+  "base": {
+    "item": "minecraft:iron_boots"
+  },
+  "result": {
+    "item": "minecraft:diamond_boots"
+  },
+  "template": {
+    "item": "enhancedsmithing:diamond_upgrade_smithing_template"
+  }
+}

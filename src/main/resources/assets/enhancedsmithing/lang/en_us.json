@@ -1,0 +1,34 @@
+{
+  "item_group.enhancedsmithing.main_tab": "Enhanced Smithing",
+  "item.enhancedsmithing.repair_kit": "Repair Kit",
+
+  "item.enhancedsmithing.attribute_crystal": "Attribute Crystal",
+  "item.enhancedsmithing.attribute_crystal.size_prefix": "Size: ",
+
+  "item.enhancedsmithing.iron_slate": "Iron Slate",
+
+  "item.enhancedsmithing.refined_iron_ingot": "Refined Iron Ingot",
+  "item.enhancedsmithing.refined_iron_nugget": "Refined Iron Nugget",
+
+  "item.enhancedsmithing.diamond_shard": "Diamond Shard",
+  "item.enhancedsmithing.diamondsteel_compound": "Diamondsteel Compound",
+  "item.enhancedsmithing.diamondsteel_ingot": "Diamondsteel Ingot",
+  "item.enhancedsmithing.diamondsteel_nugget": "Diamondsteel Nugget",
+
+  "item.enhancedsmithing.blood_gold_compound": "Blood Gold Compound",
+  "item.enhancedsmithing.blood_gold_ingot": "Blood Gold Ingot",
+  "item.enhancedsmithing.blood_gold_nugget": "Blood Gold Nugget",
+  "item.enhancedsmithing.blood_gold_slate": "Blood Gold Slate",
+
+  "upgrade.enhancedsmithing.iron_upgrade": "Iron Upgrade",
+  "item.enhancedsmithing.smithing_template.iron_upgrade.additions_slot_description": "Add Refined Iron Ingot",
+  "item.enhancedsmithing.smithing_template.iron_upgrade.applies_to": "Leather or Stone Equipment",
+  "item.enhancedsmithing.smithing_template.iron_upgrade.base_slot_description": "Add stone or leather armor, weapon, or tool",
+  "item.enhancedsmithing.smithing_template.iron_upgrade.ingredients": "Refined Iron Ingot",
+
+  "upgrade.enhancedsmithing.diamond_upgrade": "Diamond Upgrade",
+  "item.enhancedsmithing.smithing_template.diamond_upgrade.additions_slot_description": "Add Diamondsteel Ingot",
+  "item.enhancedsmithing.smithing_template.diamond_upgrade.applies_to": "Iron Equipment",
+  "item.enhancedsmithing.smithing_template.diamond_upgrade.base_slot_description": "Add iron armor, weapon, or tool",
+  "item.enhancedsmithing.smithing_template.diamond_upgrade.ingredients": "Diamondsteel Ingot"
+}

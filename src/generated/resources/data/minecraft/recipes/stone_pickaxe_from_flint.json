@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:flint"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "FFF",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "minecraft:stone_pickaxe"
+  },
+  "show_notification": true
+}

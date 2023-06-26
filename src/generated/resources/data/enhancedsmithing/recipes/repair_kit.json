@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "M": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SMI",
+    "LLL"
+  ],
+  "result": {
+    "item": "enhancedsmithing:repair_kit"
+  },
+  "show_notification": true
+}

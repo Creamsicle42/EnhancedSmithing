@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IDI",
+    "DID",
+    "IDI"
+  ],
+  "key": {
+    "I": {
+      "item": "enhancedsmithing:refined_iron_nugget"
+    },
+    "D": {
+      "item": "enhancedsmithing:diamond_shard"
+    }
+  },
+  "result": {
+    "item": "enhancedsmithing:diamondsteel_compound"
+  }
+}

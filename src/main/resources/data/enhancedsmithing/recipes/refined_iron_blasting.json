@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": {
+      "item":"enhancedsmithing:refined_iron_nugget"
+  }
+}

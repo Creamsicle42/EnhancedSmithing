@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "enhancedsmithing:refined_iron_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "enhancedsmithing:refined_iron_nugget"
+  }
+}

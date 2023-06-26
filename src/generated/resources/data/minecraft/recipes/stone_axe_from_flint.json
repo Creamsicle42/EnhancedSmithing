@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:flint"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "FF",
+    "FS",
+    " S"
+  ],
+  "result": {
+    "item": "minecraft:stone_axe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhancedsmithing:blood_gold_ingot"
+  },
+  "base": {
+    "item": "minecraft:iron_sword"
+  },
+  "result": {
+    "item": "minecraft:golden_sword"
+  },
+  "template": {
+    "item": "enhancedsmithing:gold_upgrade_smithing_template"
+  }
+}

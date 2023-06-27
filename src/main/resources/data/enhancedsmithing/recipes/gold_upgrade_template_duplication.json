@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "enhancedsmithing:gold_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "enhancedsmithing:iron_slate"
+  },
+  "addition": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "item": "enhancedsmithing:gold_upgrade_smithing_template",
+    "count": 2
+  }
+}

@@ -32,6 +32,13 @@ public class EnhancedSmithingTemplateItem {
     private static final Component DIAMOND_UPGRADE_ADDITIONS_SLOT_DESCRIPTION = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.diamond_upgrade.additions_slot_description")));
 
 
+    private static final Component GOLD_UPGRADE = Component.translatable(Util.makeDescriptionId("upgrade", new ResourceLocation(EnhancedSmithing.MODID, "gold_upgrade"))).withStyle(TITLE_FORMAT);
+    private static final Component GOLD_UPGRADE_APPLIES_TO = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.gold_upgrade.applies_to"))).withStyle(DESCRIPTION_FORMAT);
+    private static final Component GOLD_UPGRADE_INGREDIENTS = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.gold_upgrade.ingredients"))).withStyle(DESCRIPTION_FORMAT);
+    private static final Component GOLD_UPGRADE_BASE_SLOT_DESCRIPTION = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.gold_upgrade.base_slot_description")));
+    private static final Component GOLD_UPGRADE_ADDITIONS_SLOT_DESCRIPTION = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.gold_upgrade.additions_slot_description")));
+
+
 
     // Slots
     private static final ResourceLocation EMPTY_SLOT_HELMET = new ResourceLocation("item/empty_armor_slot_helmet");
@@ -51,6 +58,10 @@ public class EnhancedSmithingTemplateItem {
 
     public static SmithingTemplateItem createDiamondUpgradeTemplate() {
         return new SmithingTemplateItem(DIAMOND_UPGRADE_APPLIES_TO, DIAMOND_UPGRADE_INGREDIENTS, DIAMOND_UPGRADE, DIAMOND_UPGRADE_BASE_SLOT_DESCRIPTION, DIAMOND_UPGRADE_ADDITIONS_SLOT_DESCRIPTION, createTemplateUpgradeIconList(),  List.of(EMPTY_SLOT_INGOT));
+    }
+
+    public static SmithingTemplateItem createGoldUpgradeTemplate() {
+        return new SmithingTemplateItem(GOLD_UPGRADE_APPLIES_TO, GOLD_UPGRADE_INGREDIENTS, GOLD_UPGRADE, GOLD_UPGRADE_BASE_SLOT_DESCRIPTION, GOLD_UPGRADE_ADDITIONS_SLOT_DESCRIPTION, createTemplateUpgradeIconList(),  List.of(EMPTY_SLOT_INGOT));
     }
 
     private static List<ResourceLocation> createTemplateUpgradeIconList() {

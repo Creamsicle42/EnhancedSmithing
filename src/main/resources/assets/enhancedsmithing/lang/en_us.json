@@ -30,5 +30,11 @@
   "item.enhancedsmithing.smithing_template.diamond_upgrade.additions_slot_description": "Add Diamondsteel Ingot",
   "item.enhancedsmithing.smithing_template.diamond_upgrade.applies_to": "Iron Equipment",
   "item.enhancedsmithing.smithing_template.diamond_upgrade.base_slot_description": "Add iron armor, weapon, or tool",
-  "item.enhancedsmithing.smithing_template.diamond_upgrade.ingredients": "Diamondsteel Ingot"
+  "item.enhancedsmithing.smithing_template.diamond_upgrade.ingredients": "Diamondsteel Ingot",
+
+  "upgrade.enhancedsmithing.gold_upgrade": "Gold Upgrade",
+  "item.enhancedsmithing.smithing_template.gold_upgrade.additions_slot_description": "Add Blood Gold Ingot",
+  "item.enhancedsmithing.smithing_template.gold_upgrade.applies_to": "Iron Equipment",
+  "item.enhancedsmithing.smithing_template.gold_upgrade.base_slot_description": "Add iron armor, weapon, or tool",
+  "item.enhancedsmithing.smithing_template.gold_upgrade.ingredients": "Blood Gold Ingot"
 }

@@ -57,6 +57,21 @@ public class RecipeGenerator extends RecipeProvider {
                 Registration.DIAMOND_UPGRADE_SMITHING_TEMPLATE.get(),
                 "iron_to_diamond"
         );
+        add_tool_upgrade_recipes(
+                consumer,
+                "minecraft:iron",
+                "minecraft:golden",
+                Registration.BLOOD_GOLD_INGOT.get(),
+                Registration.GOLD_UPGRADE_SMITHING_TEMPLATE.get(),
+                "iron_to_gold");
+        add_armor_upgrade_recipes(
+                consumer,
+                "minecraft:iron",
+                "minecraft:golden",
+                Registration.BLOOD_GOLD_INGOT.get(),
+                Registration.GOLD_UPGRADE_SMITHING_TEMPLATE.get(),
+                "iron_to_gold"
+        );
 
         addIngotToNugget(
                 consumer,
@@ -150,6 +165,8 @@ public class RecipeGenerator extends RecipeProvider {
         removeToolRecipes(consumer, "wooden");
         removeToolRecipes(consumer, "iron");
         removeArmorRecipes(consumer, "iron");
+        removeToolRecipes(consumer, "golden");
+        removeArmorRecipes(consumer, "golden");
         removeToolRecipes(consumer, "diamond");
         removeArmorRecipes(consumer, "diamond");
 
@@ -333,7 +350,7 @@ public class RecipeGenerator extends RecipeProvider {
     }
 
     void removeRecipe(Consumer<FinishedRecipe> consumer, String recipeName){
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.AIR)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BARRIER)
                 .requires(Items.AIR)
                 .unlockedBy("", new ImpossibleTrigger.TriggerInstance())
                 .save(consumer, new ResourceLocation("minecraft", recipeName));

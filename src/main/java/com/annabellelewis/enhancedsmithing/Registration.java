@@ -238,6 +238,11 @@ public class Registration {
             () -> EnhancedSmithingTemplateItem.createDiamondUpgradeTemplate()
     );
 
+    public static final RegistryObject<Item> GOLD_UPGRADE_SMITHING_TEMPLATE = ITEMS.register(
+            "gold_upgrade_smithing_template",
+            () -> EnhancedSmithingTemplateItem.createGoldUpgradeTemplate()
+    );
+
 
     // Register misc items
     public static final RegistryObject<AttributeCrystalItem> ATTRIBUTE_CRYSTAL = ITEMS.register(
@@ -328,6 +333,7 @@ public class Registration {
             event.accept(ATTRIBUTE_CRYSTAL);
             event.accept(REPAIR_KIT);
             event.accept(IRON_UPGRADE_SMITHING_TEMPLATE);
+            event.accept(GOLD_UPGRADE_SMITHING_TEMPLATE);
             event.accept(DIAMOND_UPGRADE_SMITHING_TEMPLATE);
             event.accept(IRON_SLATE);
             event.accept(BLOOD_GOLD_SLATE);

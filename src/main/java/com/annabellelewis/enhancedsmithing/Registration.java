@@ -3,6 +3,7 @@ package com.annabellelewis.enhancedsmithing;
 import com.annabellelewis.enhancedsmithing.item.*;
 import com.annabellelewis.enhancedsmithing.loot.ChestGenModifier;
 import com.annabellelewis.enhancedsmithing.recipe.KitRepairRecipe;
+import com.annabellelewis.enhancedsmithing.tiers.CustomArmorMaterials;
 import com.annabellelewis.enhancedsmithing.tiers.ToolTiers;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -172,6 +173,23 @@ public class Registration {
     public static final RegistryObject<Item> ENH_IRON_BOOTS = OVERRIDEITEMS.register(
             "iron_boots",
             () -> new EnhancedArmorItem(ArmorMaterials.IRON, ArmorItem.Type.BOOTS, new Item.Properties())
+    );
+
+    public static final RegistryObject<Item> ENH_GOLD_HELMET = OVERRIDEITEMS.register(
+            "golden_helmet",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.ENHANCED_GOLD_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties())
+    );
+    public static final RegistryObject<Item> ENH_GOLD_CHESTPLATE = OVERRIDEITEMS.register(
+            "golden_chestplate",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.ENHANCED_GOLD_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties())
+    );
+    public static final RegistryObject<Item> ENH_GOLD_LEGGINGS = OVERRIDEITEMS.register(
+            "golden_leggings",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.ENHANCED_GOLD_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties())
+    );
+    public static final RegistryObject<Item> ENH_GOLD_BOOTS = OVERRIDEITEMS.register(
+            "golden_boots",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.ENHANCED_GOLD_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties())
     );
 
     public static final RegistryObject<Item> ENH_DIAMOND_HELMET = OVERRIDEITEMS.register(

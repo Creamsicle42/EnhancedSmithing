@@ -3,6 +3,7 @@ package com.annabellelewis.enhancedsmithing;
 import com.annabellelewis.enhancedsmithing.item.*;
 import com.annabellelewis.enhancedsmithing.loot.ChestGenModifier;
 import com.annabellelewis.enhancedsmithing.recipe.KitRepairRecipe;
+import com.annabellelewis.enhancedsmithing.tiers.ToolTiers;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.ChatFormatting;
@@ -55,23 +56,23 @@ public class Registration {
 
     public static final RegistryObject<Item> ENH_GOLD_PICKAXE = OVERRIDEITEMS.register(
             "golden_pickaxe",
-            () -> new EnhancedPickaxeItem(Tiers.GOLD, 1, -2.8F, new Item.Properties())
+            () -> new EnhancedPickaxeItem(ToolTiers.ENHANCED_GOLD, 1, -2.8F, new Item.Properties())
     );
     public static final RegistryObject<Item> ENH_GOLD_SWORD = OVERRIDEITEMS.register(
             "golden_sword",
-            () -> new EnhancedSwordItem(Tiers.GOLD, 3, -2.4F, new Item.Properties())
+            () -> new EnhancedSwordItem(ToolTiers.ENHANCED_GOLD, 3, -2.4F, new Item.Properties())
     );
     public static final RegistryObject<Item> ENH_GOLD_SHOVEL = OVERRIDEITEMS.register(
             "golden_shovel",
-            () -> new EnhancedShovelItem(Tiers.GOLD, 1.5F, -3.0F, new Item.Properties())
+            () -> new EnhancedShovelItem(ToolTiers.ENHANCED_GOLD, 1.5F, -3.0F, new Item.Properties())
     );
     public static final RegistryObject<Item> ENH_GOLD_AXE = OVERRIDEITEMS.register(
             "golden_axe",
-            () -> new EnhancedAxeItem(Tiers.GOLD, 6.0F, -3.0F, new Item.Properties())
+            () -> new EnhancedAxeItem(ToolTiers.ENHANCED_GOLD, 6.0F, -3.0F, new Item.Properties())
     );
     public static final RegistryObject<Item> ENH_GOLD_HOE = OVERRIDEITEMS.register(
             "golden_hoe",
-            () -> new EnhancedHoeItem(Tiers.GOLD, 0, -3.0F, new Item.Properties())
+            () -> new EnhancedHoeItem(ToolTiers.ENHANCED_GOLD, 0, -3.0F, new Item.Properties())
     );
 
 

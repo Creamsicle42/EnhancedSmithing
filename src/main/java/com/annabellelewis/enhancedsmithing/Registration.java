@@ -227,6 +227,44 @@ public class Registration {
     );
 
 
+    public static final RegistryObject<Item> AMETHYST_SWORD = ITEMS.register(
+            "amethyst_sword",
+            () -> new EnhancedSwordItem(ToolTiers.AMETHYST, 3, -2.4F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_SHOVEL = ITEMS.register(
+            "amethyst_shovel",
+            () -> new EnhancedShovelItem(ToolTiers.AMETHYST, 1.5F, -3.0F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_PICKAXE = ITEMS.register(
+            "amethyst_pickaxe",
+            () -> new EnhancedPickaxeItem(ToolTiers.AMETHYST, 1, -2.8F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_AXE = ITEMS.register(
+            "amethyst_axe",
+            () -> new EnhancedAxeItem(ToolTiers.AMETHYST, 5.0F, -3.0F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_HOE = ITEMS.register(
+            "amethyst_hoe",
+            () -> new EnhancedHoeItem(ToolTiers.AMETHYST, -4, 0.0F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_HELMET = ITEMS.register(
+            "amethyst_helmet",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.AMETHYST_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETHYST_CHESTPLATE = ITEMS.register(
+            "amethyst_chestplate",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.AMETHYST_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETHYST_LEGGINGS = ITEMS.register(
+            "amethyst_leggings",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.AMETHYST_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETHYST_BOOTS = ITEMS.register(
+            "amethyst_boots",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.AMETHYST_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties())
+    );
+
+
     // Register templates
     public static final RegistryObject<Item> IRON_UPGRADE_SMITHING_TEMPLATE = ITEMS.register(
             "iron_upgrade_smithing_template",
@@ -346,6 +384,15 @@ public class Registration {
             event.accept(DIAMONDSTEEL_INGOT);
             event.accept(DIAMONDSTEEL_NUGGET);
             event.accept(DIAMOND_SHARD);
+            event.accept(AMETHYST_AXE);
+            event.accept(AMETHYST_HOE);
+            event.accept(AMETHYST_PICKAXE);
+            event.accept(AMETHYST_SHOVEL);
+            event.accept(AMETHYST_SWORD);
+            event.accept(AMETHYST_HELMET);
+            event.accept(AMETHYST_CHESTPLATE);
+            event.accept(AMETHYST_LEGGINGS);
+            event.accept(AMETHYST_BOOTS);
 
         }
     }

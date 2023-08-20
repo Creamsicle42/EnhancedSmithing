@@ -281,6 +281,11 @@ public class Registration {
             () -> EnhancedSmithingTemplateItem.createGoldUpgradeTemplate()
     );
 
+    public static final RegistryObject<Item> AMETHYST_UPGRADE_SMITHING_TEMPLATE = ITEMS.register(
+            "amethyst_upgrade_smithing_template",
+            () -> EnhancedSmithingTemplateItem.createAmethystUpgradeTemplate()
+    );
+
 
     // Register misc items
     public static final RegistryObject<AttributeCrystalItem> ATTRIBUTE_CRYSTAL = ITEMS.register(
@@ -335,6 +340,19 @@ public class Registration {
     public static final RegistryObject<Item> REPAIR_KIT = ITEMS.register(
             "repair_kit",
             () -> new Item(new Item.Properties().durability(12))
+    );
+
+    public static final RegistryObject<Item> AMETRINE_COMPOUND = ITEMS.register(
+            "ametrine_compound",
+            () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETRINE_NUGGET = ITEMS.register(
+            "ametrine_nugget",
+            () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETRINE_INGOT = ITEMS.register(
+            "ametrine_ingot",
+            () -> new Item(new Item.Properties())
     );
 
     // Register loot modifiers

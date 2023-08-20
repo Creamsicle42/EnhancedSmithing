@@ -72,6 +72,21 @@ public class RecipeGenerator extends RecipeProvider {
                 Registration.GOLD_UPGRADE_SMITHING_TEMPLATE.get(),
                 "iron_to_gold"
         );
+        add_tool_upgrade_recipes(
+                consumer,
+                "minecraft:golden",
+                EnhancedSmithing.MODID + ":amethyst",
+                Registration.AMETRINE_INGOT.get(),
+                Registration.AMETHYST_UPGRADE_SMITHING_TEMPLATE.get(),
+                "gold_to_amethyst");
+        add_armor_upgrade_recipes(
+                consumer,
+                "minecraft:golden",
+                EnhancedSmithing.MODID + ":amethyst",
+                Registration.AMETRINE_INGOT.get(),
+                Registration.AMETHYST_UPGRADE_SMITHING_TEMPLATE.get(),
+                "gold_to_amethyst"
+        );
 
         addIngotToNugget(
                 consumer,
@@ -91,6 +106,13 @@ public class RecipeGenerator extends RecipeProvider {
                 Registration.BLOOD_GOLD_NUGGET.get(),
                 Registration.BLOOD_GOLD_INGOT.get(),
                 "blood_gold"
+        );
+
+        addIngotToNugget(
+                consumer,
+                Registration.AMETRINE_NUGGET.get(),
+                Registration.AMETRINE_INGOT.get(),
+                "ametrine"
         );
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Registration.ENH_STONE_AXE.get())
@@ -161,6 +183,26 @@ public class RecipeGenerator extends RecipeProvider {
                 .unlockedBy("has_iron", InventoryChangeTrigger.TriggerInstance.hasItems(
                         ItemPredicate.Builder.item().of(Items.IRON_INGOT).build()))
                 .save(consumer,new ResourceLocation(EnhancedSmithing.MODID, "repair_kit"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Registration.AMETRINE_COMPOUND.get())
+                .pattern(" C ")
+                .pattern("CAC")
+                .pattern(" C ")
+                .define('C', Items.COPPER_INGOT)
+                .define('A', Items.AMETHYST_BLOCK)
+                .unlockedBy("has_amethyst", InventoryChangeTrigger.TriggerInstance.hasItems(
+                        ItemPredicate.Builder.item().of(Items.AMETHYST_SHARD).build()))
+                .save(consumer,new ResourceLocation(EnhancedSmithing.MODID, "ametrine_compound"));
+
+        SimpleCookingRecipeBuilder.blasting(
+                Ingredient.of(Registration.AMETRINE_COMPOUND.get()),
+                RecipeCategory.MISC,
+                Registration.AMETRINE_NUGGET.get(),
+                4,
+                200
+        ).unlockedBy("has_ametrine", InventoryChangeTrigger.TriggerInstance.hasItems(
+                ItemPredicate.Builder.item().of(Registration.AMETRINE_COMPOUND.get()).build()))
+                .save(consumer,new ResourceLocation(EnhancedSmithing.MODID, "ametrine_blasting"));
 
         removeToolRecipes(consumer, "wooden");
         removeToolRecipes(consumer, "iron");

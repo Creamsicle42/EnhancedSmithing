@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "BDB",
+    "BDB"
+  ],
+  "key": {
+    "B": {
+      "item": "enhancedsmithing:blood_gold_ingot"
+    },
+    "D": {
+      "item": "enhancedsmithing:ametrine_ingot"
+    }
+  },
+  "result": {
+    "item": "enhancedsmithing:amethyst_upgrade_smithing_template"
+  }
+}

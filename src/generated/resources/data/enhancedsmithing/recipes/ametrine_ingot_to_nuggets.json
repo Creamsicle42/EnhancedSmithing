@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "enhancedsmithing:ametrine_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "enhancedsmithing:ametrine_nugget"
+  }
+}

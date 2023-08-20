@@ -1,5 +1,6 @@
 package com.annabellelewis.enhancedsmithing.tiers;
 
+import com.annabellelewis.enhancedsmithing.EnhancedSmithing;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -8,8 +9,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public class CustomArmorMaterials {
-    public static final ArmorMaterial ENHANCED_GOLD_MATERIAL = new CustomArmorMaterial(13,5, 22, SoundEvents.ARMOR_EQUIP_GOLD, Ingredient.of(Items.GOLD_INGOT), "gold", 0.0f, 0.0f);
-    public static final ArmorMaterial AMETHYST_MATERIAL = new CustomArmorMaterial(31,7, 22, SoundEvents.AMETHYST_CLUSTER_STEP, Ingredient.of(Items.AMETHYST_SHARD), "amethyst", 1.0f, 0.0f);
+    public static final ArmorMaterial ENHANCED_GOLD_MATERIAL = new CustomArmorMaterial(13,5, 22, SoundEvents.ARMOR_EQUIP_GOLD, Ingredient.of(Items.GOLD_INGOT), "minecraft:gold", 0.0f, 0.0f);
+    public static final ArmorMaterial AMETHYST_MATERIAL = new CustomArmorMaterial(31,7, 22, SoundEvents.AMETHYST_CLUSTER_STEP, Ingredient.of(Items.AMETHYST_SHARD), EnhancedSmithing.MODID + ":amethyst", 1.0f, 0.0f);
 
     private static class CustomArmorMaterial implements ArmorMaterial{
         private final int baseDurability;

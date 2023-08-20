@@ -1,6 +1,7 @@
 package com.annabellelewis.enhancedsmithing.tiers;
 
 import com.annabellelewis.enhancedsmithing.EnhancedSmithing;
+import com.annabellelewis.enhancedsmithing.Registration;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;

@@ -7,7 +7,7 @@
     "item": "enhancedsmithing:blood_gold_slate"
   },
   "addition": {
-    "item": "minecraft:amethyst"
+    "item": "minecraft:amethyst_shard"
   },
   "result": {
     "item": "enhancedsmithing:amethyst_upgrade_smithing_template",

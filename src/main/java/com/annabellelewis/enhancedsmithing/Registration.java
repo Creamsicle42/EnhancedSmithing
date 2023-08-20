@@ -391,6 +391,7 @@ public class Registration {
             event.accept(IRON_UPGRADE_SMITHING_TEMPLATE);
             event.accept(GOLD_UPGRADE_SMITHING_TEMPLATE);
             event.accept(DIAMOND_UPGRADE_SMITHING_TEMPLATE);
+            event.accept(AMETHYST_UPGRADE_SMITHING_TEMPLATE);
             event.accept(IRON_SLATE);
             event.accept(BLOOD_GOLD_SLATE);
             event.accept(REFINED_IRON_INGOT);
@@ -402,6 +403,9 @@ public class Registration {
             event.accept(DIAMONDSTEEL_INGOT);
             event.accept(DIAMONDSTEEL_NUGGET);
             event.accept(DIAMOND_SHARD);
+            event.accept(AMETRINE_COMPOUND);
+            event.accept(AMETRINE_INGOT);
+            event.accept(AMETRINE_NUGGET);
             event.accept(AMETHYST_AXE);
             event.accept(AMETHYST_HOE);
             event.accept(AMETHYST_PICKAXE);

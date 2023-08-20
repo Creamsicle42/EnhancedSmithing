@@ -20,6 +20,20 @@
   "item.enhancedsmithing.blood_gold_nugget": "Blood Gold Nugget",
   "item.enhancedsmithing.blood_gold_slate": "Blood Gold Slate",
 
+  "item.enhancedsmithing.ametrine_compound": "Ametrine Compound",
+  "item.enhancedsmithing.ametrine_ingot": "Ametrine Ingot",
+  "item.enhancedsmithing.ametrine_nugget": "Ametrine Nugget",
+
+  "item.enhancedsmithing.amethyst_axe": "Amethyst Axe",
+  "item.enhancedsmithing.amethyst_pickaxe": "Amethyst Pickaxe",
+  "item.enhancedsmithing.amethyst_shovel": "Amethyst Shovel",
+  "item.enhancedsmithing.amethyst_hoe": "Amethyst Hoe",
+  "item.enhancedsmithing.amethyst_sword": "Amethyst Sword",
+  "item.enhancedsmithing.amethyst_helmet": "Amethyst Helmet",
+  "item.enhancedsmithing.amethyst_chestplate": "Amethyst Chestplate",
+  "item.enhancedsmithing.amethyst_leggings": "Amethyst Leggings",
+  "item.enhancedsmithing.amethyst_boots": "Amethyst Boots",
+
   "upgrade.enhancedsmithing.iron_upgrade": "Iron Upgrade",
   "item.enhancedsmithing.smithing_template.iron_upgrade.additions_slot_description": "Add Refined Iron Ingot",
   "item.enhancedsmithing.smithing_template.iron_upgrade.applies_to": "Leather or Stone Equipment",
@@ -36,5 +50,11 @@
   "item.enhancedsmithing.smithing_template.gold_upgrade.additions_slot_description": "Add Blood Gold Ingot",
   "item.enhancedsmithing.smithing_template.gold_upgrade.applies_to": "Iron Equipment",
   "item.enhancedsmithing.smithing_template.gold_upgrade.base_slot_description": "Add iron armor, weapon, or tool",
-  "item.enhancedsmithing.smithing_template.gold_upgrade.ingredients": "Blood Gold Ingot"
+  "item.enhancedsmithing.smithing_template.gold_upgrade.ingredients": "Blood Gold Ingot",
+
+  "upgrade.enhancedsmithing.amethyst_upgrade": "Amethyst Upgrade",
+  "item.enhancedsmithing.smithing_template.amethyst_upgrade.additions_slot_description": "Add Ametrine Ingot",
+  "item.enhancedsmithing.smithing_template.amethyst_upgrade.applies_to": "Golden Equipment",
+  "item.enhancedsmithing.smithing_template.amethyst_upgrade.base_slot_description": "Add gold armor, weapon, or tool",
+  "item.enhancedsmithing.smithing_template.amethyst_upgrade.ingredients": "Ametrine Ingot"
 }

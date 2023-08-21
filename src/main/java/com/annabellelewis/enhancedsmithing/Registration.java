@@ -227,6 +227,44 @@ public class Registration {
     );
 
 
+    public static final RegistryObject<Item> AMETHYST_SWORD = ITEMS.register(
+            "amethyst_sword",
+            () -> new EnhancedSwordItem(ToolTiers.AMETHYST, 3, -2.4F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_SHOVEL = ITEMS.register(
+            "amethyst_shovel",
+            () -> new EnhancedShovelItem(ToolTiers.AMETHYST, 1.5F, -3.0F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_PICKAXE = ITEMS.register(
+            "amethyst_pickaxe",
+            () -> new EnhancedPickaxeItem(ToolTiers.AMETHYST, 1, -2.8F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_AXE = ITEMS.register(
+            "amethyst_axe",
+            () -> new EnhancedAxeItem(ToolTiers.AMETHYST, 5.0F, -3.0F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_HOE = ITEMS.register(
+            "amethyst_hoe",
+            () -> new EnhancedHoeItem(ToolTiers.AMETHYST, -4, 0.0F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> AMETHYST_HELMET = ITEMS.register(
+            "amethyst_helmet",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.AMETHYST_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETHYST_CHESTPLATE = ITEMS.register(
+            "amethyst_chestplate",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.AMETHYST_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETHYST_LEGGINGS = ITEMS.register(
+            "amethyst_leggings",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.AMETHYST_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETHYST_BOOTS = ITEMS.register(
+            "amethyst_boots",
+            () -> new EnhancedArmorItem(CustomArmorMaterials.AMETHYST_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties())
+    );
+
+
     // Register templates
     public static final RegistryObject<Item> IRON_UPGRADE_SMITHING_TEMPLATE = ITEMS.register(
             "iron_upgrade_smithing_template",
@@ -241,6 +279,11 @@ public class Registration {
     public static final RegistryObject<Item> GOLD_UPGRADE_SMITHING_TEMPLATE = ITEMS.register(
             "gold_upgrade_smithing_template",
             () -> EnhancedSmithingTemplateItem.createGoldUpgradeTemplate()
+    );
+
+    public static final RegistryObject<Item> AMETHYST_UPGRADE_SMITHING_TEMPLATE = ITEMS.register(
+            "amethyst_upgrade_smithing_template",
+            () -> EnhancedSmithingTemplateItem.createAmethystUpgradeTemplate()
     );
 
 
@@ -299,6 +342,19 @@ public class Registration {
             () -> new Item(new Item.Properties().durability(12))
     );
 
+    public static final RegistryObject<Item> AMETRINE_COMPOUND = ITEMS.register(
+            "ametrine_compound",
+            () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETRINE_NUGGET = ITEMS.register(
+            "ametrine_nugget",
+            () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> AMETRINE_INGOT = ITEMS.register(
+            "ametrine_ingot",
+            () -> new Item(new Item.Properties())
+    );
+
     // Register loot modifiers
     public static final RegistryObject<Codec<ChestGenModifier>> CHEST_GEN_MODIFIER = GLOBAL_LOOT_MODIFIERS.register(
             "loot_chest_gen",
@@ -335,6 +391,7 @@ public class Registration {
             event.accept(IRON_UPGRADE_SMITHING_TEMPLATE);
             event.accept(GOLD_UPGRADE_SMITHING_TEMPLATE);
             event.accept(DIAMOND_UPGRADE_SMITHING_TEMPLATE);
+            event.accept(AMETHYST_UPGRADE_SMITHING_TEMPLATE);
             event.accept(IRON_SLATE);
             event.accept(BLOOD_GOLD_SLATE);
             event.accept(REFINED_IRON_INGOT);
@@ -346,6 +403,18 @@ public class Registration {
             event.accept(DIAMONDSTEEL_INGOT);
             event.accept(DIAMONDSTEEL_NUGGET);
             event.accept(DIAMOND_SHARD);
+            event.accept(AMETRINE_COMPOUND);
+            event.accept(AMETRINE_INGOT);
+            event.accept(AMETRINE_NUGGET);
+            event.accept(AMETHYST_AXE);
+            event.accept(AMETHYST_HOE);
+            event.accept(AMETHYST_PICKAXE);
+            event.accept(AMETHYST_SHOVEL);
+            event.accept(AMETHYST_SWORD);
+            event.accept(AMETHYST_HELMET);
+            event.accept(AMETHYST_CHESTPLATE);
+            event.accept(AMETHYST_LEGGINGS);
+            event.accept(AMETHYST_BOOTS);
 
         }
     }

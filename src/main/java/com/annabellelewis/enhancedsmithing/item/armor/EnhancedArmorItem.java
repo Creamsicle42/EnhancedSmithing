@@ -1,5 +1,6 @@
-package com.annabellelewis.enhancedsmithing.item;
+package com.annabellelewis.enhancedsmithing.item.armor;
 
+import com.annabellelewis.enhancedsmithing.item.ILevelableItem;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.nbt.CompoundTag;
@@ -24,7 +25,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class EnhancedArmorItem extends ArmorItem implements ILevelableItem{
+public class EnhancedArmorItem extends ArmorItem implements ILevelableItem {
 
     private final Multimap<Attribute, AttributeModifier> brokenModifiers;
 

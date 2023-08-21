@@ -1,4 +1,4 @@
-package com.annabellelewis.enhancedsmithing.item;
+package com.annabellelewis.enhancedsmithing.item.armor;
 
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.DyeableLeatherItem;

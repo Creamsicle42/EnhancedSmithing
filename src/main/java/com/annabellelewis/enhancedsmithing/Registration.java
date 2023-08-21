@@ -1,19 +1,19 @@
 package com.annabellelewis.enhancedsmithing;
 
 import com.annabellelewis.enhancedsmithing.item.*;
+import com.annabellelewis.enhancedsmithing.item.armor.EnhancedArmorItem;
+import com.annabellelewis.enhancedsmithing.item.armor.EnhancedDyeableArmorItem;
+import com.annabellelewis.enhancedsmithing.item.armor.EnhancedNetheriteArmorItem;
+import com.annabellelewis.enhancedsmithing.item.armor.SculkArmorItem;
 import com.annabellelewis.enhancedsmithing.loot.ChestGenModifier;
 import com.annabellelewis.enhancedsmithing.recipe.KitRepairRecipe;
 import com.annabellelewis.enhancedsmithing.tiers.CustomArmorMaterials;
 import com.annabellelewis.enhancedsmithing.tiers.ToolTiers;
 import com.mojang.serialization.Codec;
-import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.ChatFormatting;
-import net.minecraft.Util;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.crafting.FireworkRocketRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
@@ -262,6 +262,24 @@ public class Registration {
     public static final RegistryObject<Item> AMETHYST_BOOTS = ITEMS.register(
             "amethyst_boots",
             () -> new EnhancedArmorItem(CustomArmorMaterials.AMETHYST_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties())
+    );
+
+
+    public static final RegistryObject<Item> SCULK_HELMET = ITEMS.register(
+            "sculk_helmet",
+            () -> new SculkArmorItem(CustomArmorMaterials.SCULK_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties())
+    );
+    public static final RegistryObject<Item> SCULK_CHESTPLATE = ITEMS.register(
+            "sculk_chestplate",
+            () -> new SculkArmorItem(CustomArmorMaterials.SCULK_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties())
+    );
+    public static final RegistryObject<Item> SCULK_LEGGINGS = ITEMS.register(
+            "sculk_leggings",
+            () -> new SculkArmorItem(CustomArmorMaterials.SCULK_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties())
+    );
+    public static final RegistryObject<Item> SCULK_BOOTS = ITEMS.register(
+            "sculk_boots",
+            () -> new SculkArmorItem(CustomArmorMaterials.SCULK_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties())
     );
 
 

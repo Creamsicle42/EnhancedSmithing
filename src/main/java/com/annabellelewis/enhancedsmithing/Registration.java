@@ -211,19 +211,19 @@ public class Registration {
 
     public static final RegistryObject<Item> ENH_NETHERITE_HELMET = OVERRIDEITEMS.register(
             "netherite_helmet",
-            () -> new EnhancedArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.HELMET, new Item.Properties())
+            () -> new EnhancedNetheriteArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.HELMET, new Item.Properties())
     );
     public static final RegistryObject<Item> ENH_NETHERITE_CHESTPLATE = OVERRIDEITEMS.register(
             "netherite_chestplate",
-            () -> new EnhancedArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties())
+            () -> new EnhancedNetheriteArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Properties())
     );
     public static final RegistryObject<Item> ENH_NETHERITE_LEGGINGS = OVERRIDEITEMS.register(
             "netherite_leggings",
-            () -> new EnhancedArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties())
+            () -> new EnhancedNetheriteArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Properties())
     );
     public static final RegistryObject<Item> ENH_NETHERITE_BOOTS = OVERRIDEITEMS.register(
             "netherite_boots",
-            () -> new EnhancedArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties())
+            () -> new EnhancedNetheriteArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.BOOTS, new Item.Properties())
     );
 
 

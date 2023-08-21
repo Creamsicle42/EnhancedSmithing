@@ -2,6 +2,7 @@ package com.annabellelewis.enhancedsmithing;
 
 import com.annabellelewis.enhancedsmithing.datagen.Datagen;
 import com.annabellelewis.enhancedsmithing.item.EnhancedArmorItem;
+import com.annabellelewis.enhancedsmithing.item.EnhancedNetheriteArmorItem;
 import com.annabellelewis.enhancedsmithing.recipe.Anvil;
 import com.annabellelewis.enhancedsmithing.recipe.Grindstone;
 import com.mojang.logging.LogUtils;
@@ -54,6 +55,7 @@ public class EnhancedSmithing
         forgeEventBus.addListener(Grindstone::grindstonePlaceEvent);
         forgeEventBus.addListener(Grindstone::grindstoneTakeEvent);
         forgeEventBus.addListener(EnhancedArmorItem::LivingHurtEvent);
+        forgeEventBus.addListener(EnhancedNetheriteArmorItem::LivingHurtEvent);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

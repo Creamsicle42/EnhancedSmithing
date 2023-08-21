@@ -47,7 +47,7 @@ public class SculkArmorItem extends EnhancedArmorItem{
     }
 
     public static void VanillaGameEvent(VanillaGameEvent event){
-        if(vibrationCancelableEvents.contains(event)){tryCancelVibrationEvent(event);}
+        if(vibrationCancelableEvents.contains(event.getVanillaEvent())){tryCancelVibrationEvent(event);}
 
     }
 

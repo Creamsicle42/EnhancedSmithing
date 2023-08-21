@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "enhancedsmithing:item/impregnated_diamondsteel_ingot"
+  }
+}

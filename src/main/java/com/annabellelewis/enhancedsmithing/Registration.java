@@ -265,21 +265,41 @@ public class Registration {
     );
 
 
-    public static final RegistryObject<Item> SCULK_HELMET = ITEMS.register(
-            "sculk_helmet",
+    public static final RegistryObject<Item> VIBRONITE_HELMET = ITEMS.register(
+            "vibronite_helmet",
             () -> new SculkArmorItem(CustomArmorMaterials.SCULK_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties())
     );
-    public static final RegistryObject<Item> SCULK_CHESTPLATE = ITEMS.register(
-            "sculk_chestplate",
+    public static final RegistryObject<Item> VIBRONITE_CHESTPLATE = ITEMS.register(
+            "vibronite_chestplate",
             () -> new SculkArmorItem(CustomArmorMaterials.SCULK_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties())
     );
-    public static final RegistryObject<Item> SCULK_LEGGINGS = ITEMS.register(
-            "sculk_leggings",
+    public static final RegistryObject<Item> VIBRONITE_LEGGINGS = ITEMS.register(
+            "vibronite_leggings",
             () -> new SculkArmorItem(CustomArmorMaterials.SCULK_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties())
     );
-    public static final RegistryObject<Item> SCULK_BOOTS = ITEMS.register(
-            "sculk_boots",
+    public static final RegistryObject<Item> VIBRONITE_BOOTS = ITEMS.register(
+            "vibronite_boots",
             () -> new SculkArmorItem(CustomArmorMaterials.SCULK_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties())
+    );
+    public static final RegistryObject<Item> VIBRONITE_SWORD = ITEMS.register(
+            "vibronite_sword",
+            () -> new EnhancedSwordItem(ToolTiers.SCULK, 3, -2.4F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> VIBRONITE_SHOVEL = ITEMS.register(
+            "vibronite_shovel",
+            () -> new EnhancedShovelItem(ToolTiers.SCULK, 1.5F, -3.0F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> VIBRONITE_PICKAXE = ITEMS.register(
+            "vibronite_pickaxe",
+            () -> new EnhancedPickaxeItem(ToolTiers.SCULK, 1, -2.8F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> VIBRONITE_AXE = ITEMS.register(
+            "vibronite_axe",
+            () -> new EnhancedAxeItem(ToolTiers.SCULK, 5.0F, -3.0F, (new Item.Properties()).fireResistant())
+    );
+    public static final RegistryObject<Item> VIBRONITE_HOE = ITEMS.register(
+            "vibronite_hoe",
+            () -> new EnhancedHoeItem(ToolTiers.SCULK, -4, 0.0F, (new Item.Properties()).fireResistant())
     );
 
 
@@ -302,6 +322,11 @@ public class Registration {
     public static final RegistryObject<Item> AMETHYST_UPGRADE_SMITHING_TEMPLATE = ITEMS.register(
             "amethyst_upgrade_smithing_template",
             () -> EnhancedSmithingTemplateItem.createAmethystUpgradeTemplate()
+    );
+
+    public static final RegistryObject<Item> VIBRONITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register(
+            "vibronite_upgrade_smithing_template",
+            () -> EnhancedSmithingTemplateItem.createVibroniteUpgradeTemplate()
     );
 
 
@@ -373,6 +398,19 @@ public class Registration {
             () -> new Item(new Item.Properties())
     );
 
+    public static final RegistryObject<Item> IMPREGNATED_DIAMONDSTEEL_INGOT = ITEMS.register(
+            "impregnated_diamondsteel_ingot",
+            () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> VIBRONITE_NUGGET = ITEMS.register(
+            "vibronite_nugget",
+            () -> new Item(new Item.Properties())
+    );
+    public static final RegistryObject<Item> VIBRONITE_INGOT = ITEMS.register(
+            "vibronite_ingot",
+            () -> new Item(new Item.Properties())
+    );
+
     // Register loot modifiers
     public static final RegistryObject<Codec<ChestGenModifier>> CHEST_GEN_MODIFIER = GLOBAL_LOOT_MODIFIERS.register(
             "loot_chest_gen",
@@ -410,6 +448,7 @@ public class Registration {
             event.accept(GOLD_UPGRADE_SMITHING_TEMPLATE);
             event.accept(DIAMOND_UPGRADE_SMITHING_TEMPLATE);
             event.accept(AMETHYST_UPGRADE_SMITHING_TEMPLATE);
+            event.accept(VIBRONITE_UPGRADE_SMITHING_TEMPLATE);
             event.accept(IRON_SLATE);
             event.accept(BLOOD_GOLD_SLATE);
             event.accept(REFINED_IRON_INGOT);
@@ -433,6 +472,18 @@ public class Registration {
             event.accept(AMETHYST_CHESTPLATE);
             event.accept(AMETHYST_LEGGINGS);
             event.accept(AMETHYST_BOOTS);
+            event.accept(IMPREGNATED_DIAMONDSTEEL_INGOT);
+            event.accept(VIBRONITE_INGOT);
+            event.accept(VIBRONITE_NUGGET);
+            event.accept(VIBRONITE_AXE);
+            event.accept(VIBRONITE_HOE);
+            event.accept(VIBRONITE_PICKAXE);
+            event.accept(VIBRONITE_SHOVEL);
+            event.accept(VIBRONITE_SWORD);
+            event.accept(VIBRONITE_HELMET);
+            event.accept(VIBRONITE_CHESTPLATE);
+            event.accept(VIBRONITE_LEGGINGS);
+            event.accept(VIBRONITE_BOOTS);
 
         }
     }

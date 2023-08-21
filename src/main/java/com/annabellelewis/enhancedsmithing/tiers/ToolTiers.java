@@ -14,4 +14,7 @@ public class ToolTiers {
 
     public static Tier AMETHYST = new ForgeTier(3, 1200, 10f, 3.0f, 22, BlockTags.NEEDS_DIAMOND_TOOL,
             () -> {return Ingredient.of(Items.AMETHYST_SHARD);});
+
+    public static Tier SCULK = new ForgeTier(4, 2000, 12f, 4.0f, 25, BlockTags.NEEDS_DIAMOND_TOOL,
+            () -> {return Ingredient.of(Items.ECHO_SHARD);});
 }

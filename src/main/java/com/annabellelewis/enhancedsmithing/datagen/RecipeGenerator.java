@@ -88,6 +88,22 @@ public class RecipeGenerator extends RecipeProvider {
                 "gold_to_amethyst"
         );
 
+        add_tool_upgrade_recipes(
+                consumer,
+                EnhancedSmithing.MODID + ":amethyst",
+                EnhancedSmithing.MODID + ":vibronite",
+                Registration.VIBRONITE_INGOT.get(),
+                Registration.VIBRONITE_UPGRADE_SMITHING_TEMPLATE.get(),
+                "amethyst_to_vibronite");
+        add_armor_upgrade_recipes(
+                consumer,
+                EnhancedSmithing.MODID + ":amethyst",
+                EnhancedSmithing.MODID + ":vibronite",
+                Registration.VIBRONITE_INGOT.get(),
+                Registration.VIBRONITE_UPGRADE_SMITHING_TEMPLATE.get(),
+                "amethyst_to_vibronite"
+        );
+
         addIngotToNugget(
                 consumer,
                 Registration.REFINED_IRON_NUGGET.get(),
@@ -113,6 +129,13 @@ public class RecipeGenerator extends RecipeProvider {
                 Registration.AMETRINE_NUGGET.get(),
                 Registration.AMETRINE_INGOT.get(),
                 "ametrine"
+        );
+
+        addIngotToNugget(
+                consumer,
+                Registration.VIBRONITE_NUGGET.get(),
+                Registration.VIBRONITE_INGOT.get(),
+                "vibronite"
         );
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Registration.ENH_STONE_AXE.get())

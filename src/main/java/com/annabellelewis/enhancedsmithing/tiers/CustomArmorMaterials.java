@@ -12,7 +12,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 public class CustomArmorMaterials {
     public static final ArmorMaterial ENHANCED_GOLD_MATERIAL = new CustomArmorMaterial(13,5, 22, SoundEvents.ARMOR_EQUIP_GOLD, Ingredient.of(Items.GOLD_INGOT), "minecraft:gold", 0.0f, 0.0f);
     public static final ArmorMaterial AMETHYST_MATERIAL = new CustomArmorMaterial(31,7, 22, SoundEvents.AMETHYST_CLUSTER_STEP, Ingredient.of(Items.AMETHYST_SHARD), EnhancedSmithing.MODID + ":amethyst", 1.0f, 0.0f);
-    public static final ArmorMaterial SCULK_MATERIAL = new CustomArmorMaterial(36,8, 25, SoundEvents.SCULK_BLOCK_PLACE, Ingredient.of(Items.ECHO_SHARD), EnhancedSmithing.MODID + ":sculk", 1.5f, 0.5f);
+    public static final ArmorMaterial SCULK_MATERIAL = new CustomArmorMaterial(34,9, 25, SoundEvents.SCULK_BLOCK_PLACE, Ingredient.of(Items.ECHO_SHARD), EnhancedSmithing.MODID + ":vibronite", 1.5f, 0.5f);
 
 
     private static class CustomArmorMaterial implements ArmorMaterial{

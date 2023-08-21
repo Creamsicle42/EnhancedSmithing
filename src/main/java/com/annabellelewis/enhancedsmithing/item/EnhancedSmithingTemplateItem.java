@@ -46,6 +46,13 @@ public class EnhancedSmithingTemplateItem {
     private static final Component AMETHYST_UPGRADE_ADDITIONS_SLOT_DESCRIPTION = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.amethyst_upgrade.additions_slot_description")));
 
 
+    private static final Component VIBRONITE_UPGRADE = Component.translatable(Util.makeDescriptionId("upgrade", new ResourceLocation(EnhancedSmithing.MODID, "vibronite_upgrade"))).withStyle(TITLE_FORMAT);
+    private static final Component VIBRONITE_UPGRADE_APPLIES_TO = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.vibronite_upgrade.applies_to"))).withStyle(DESCRIPTION_FORMAT);
+    private static final Component VIBRONITE_UPGRADE_INGREDIENTS = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.vibronite_upgrade.ingredients"))).withStyle(DESCRIPTION_FORMAT);
+    private static final Component VIBRONITE_UPGRADE_BASE_SLOT_DESCRIPTION = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.vibronite_upgrade.base_slot_description")));
+    private static final Component VIBRONITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION = Component.translatable(Util.makeDescriptionId("item", new ResourceLocation(EnhancedSmithing.MODID,"smithing_template.vibronite_upgrade.additions_slot_description")));
+
+
 
 
     // Slots
@@ -74,6 +81,10 @@ public class EnhancedSmithingTemplateItem {
 
     public static SmithingTemplateItem createAmethystUpgradeTemplate() {
         return new SmithingTemplateItem(AMETHYST_UPGRADE_APPLIES_TO, AMETHYST_UPGRADE_INGREDIENTS, AMETHYST_UPGRADE, AMETHYST_UPGRADE_BASE_SLOT_DESCRIPTION, AMETHYST_UPGRADE_ADDITIONS_SLOT_DESCRIPTION, createTemplateUpgradeIconList(),  List.of(EMPTY_SLOT_INGOT));
+    }
+
+    public static SmithingTemplateItem createVibroniteUpgradeTemplate() {
+        return new SmithingTemplateItem(VIBRONITE_UPGRADE_APPLIES_TO, VIBRONITE_UPGRADE_INGREDIENTS, VIBRONITE_UPGRADE, VIBRONITE_UPGRADE_BASE_SLOT_DESCRIPTION, VIBRONITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION, createTemplateUpgradeIconList(),  List.of(EMPTY_SLOT_INGOT));
     }
 
     private static List<ResourceLocation> createTemplateUpgradeIconList() {

@@ -34,6 +34,20 @@
   "item.enhancedsmithing.amethyst_leggings": "Amethyst Leggings",
   "item.enhancedsmithing.amethyst_boots": "Amethyst Boots",
 
+  "item.enhancedsmithing.impregnated_diamondsteel_ingot": "Impregnated Diamondsteel Ingot",
+  "item.enhancedsmithing.vibronite_ingot": "Vibronite Ingot",
+  "item.enhancedsmithing.vibronite_nugget": "Vibronite Nugget",
+
+  "item.enhancedsmithing.vibronite_axe": "Vibronite Axe",
+  "item.enhancedsmithing.vibronite_pickaxe": "Vibronite Pickaxe",
+  "item.enhancedsmithing.vibronite_shovel": "Vibronite Shovel",
+  "item.enhancedsmithing.vibronite_hoe": "Vibronite Hoe",
+  "item.enhancedsmithing.vibronite_sword": "Vibronite Sword",
+  "item.enhancedsmithing.vibronite_helmet": "Vibronite Helmet",
+  "item.enhancedsmithing.vibronite_chestplate": "Vibronite Chestplate",
+  "item.enhancedsmithing.vibronite_leggings": "Vibronite Leggings",
+  "item.enhancedsmithing.vibronite_boots": "Vibronite Boots",
+
   "upgrade.enhancedsmithing.iron_upgrade": "Iron Upgrade",
   "item.enhancedsmithing.smithing_template.iron_upgrade.additions_slot_description": "Add Refined Iron Ingot",
   "item.enhancedsmithing.smithing_template.iron_upgrade.applies_to": "Leather or Stone Equipment",
@@ -56,5 +70,11 @@
   "item.enhancedsmithing.smithing_template.amethyst_upgrade.additions_slot_description": "Add Ametrine Ingot",
   "item.enhancedsmithing.smithing_template.amethyst_upgrade.applies_to": "Golden Equipment",
   "item.enhancedsmithing.smithing_template.amethyst_upgrade.base_slot_description": "Add gold armor, weapon, or tool",
-  "item.enhancedsmithing.smithing_template.amethyst_upgrade.ingredients": "Ametrine Ingot"
+  "item.enhancedsmithing.smithing_template.amethyst_upgrade.ingredients": "Ametrine Ingot",
+
+  "upgrade.enhancedsmithing.vibronite_upgrade": "Vibronite Upgrade",
+  "item.enhancedsmithing.smithing_template.vibronite_upgrade.additions_slot_description": "Add Vibronite Ingot",
+  "item.enhancedsmithing.smithing_template.vibronite_upgrade.applies_to": "Amethyst Equipment",
+  "item.enhancedsmithing.smithing_template.vibronite_upgrade.base_slot_description": "Add amethyst armor, weapon, or tool",
+  "item.enhancedsmithing.smithing_template.vibronite_upgrade.ingredients": "Vibronite Ingot"
 }

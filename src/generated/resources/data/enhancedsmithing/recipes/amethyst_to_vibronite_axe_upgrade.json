@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhancedsmithing:vibronite_ingot"
+  },
+  "base": {
+    "item": "enhancedsmithing:amethyst_axe"
+  },
+  "result": {
+    "item": "enhancedsmithing:vibronite_axe"
+  },
+  "template": {
+    "item": "enhancedsmithing:vibronite_upgrade_smithing_template"
+  }
+}

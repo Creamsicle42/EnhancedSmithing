@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "enhancedsmithing:vibronite_ingot"
+  },
+  "base": {
+    "item": "enhancedsmithing:amethyst_leggings"
+  },
+  "result": {
+    "item": "enhancedsmithing:vibronite_leggings"
+  },
+  "template": {
+    "item": "enhancedsmithing:vibronite_upgrade_smithing_template"
+  }
+}

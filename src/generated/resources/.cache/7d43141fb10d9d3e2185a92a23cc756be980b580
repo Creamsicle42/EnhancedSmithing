@@ -1,4 +1,4 @@
-// 1.20.1	2023-08-20T14:28:57.1673643	Item Models: enhancedsmithing
+// 1.20.1	2023-08-21T12:58:35.5552533	Item Models: enhancedsmithing
 22a2969a279fb31479eddb3857151b16e267c51c assets/enhancedsmithing/models/item/amethyst_axe.json
 682edae7945be05c338e9de808d8b75ddb4e508c assets/enhancedsmithing/models/item/amethyst_boots.json
 8d679ebb02be0109b9746e95bec6fe443d7b9d4f assets/enhancedsmithing/models/item/amethyst_chestplate.json
@@ -8,3 +8,16 @@
 03004ee48a41609b036fea2575298c9a5fccad76 assets/enhancedsmithing/models/item/amethyst_pickaxe.json
 b7400a409ee7f78b6289dcda638f3a459c986684 assets/enhancedsmithing/models/item/amethyst_shovel.json
 d7a339db7c49ac7e73789285827a5989412c1422 assets/enhancedsmithing/models/item/amethyst_sword.json
+013d3fa0c580446a3d57d455c91e9a00cc3edd7e assets/enhancedsmithing/models/item/impregnated_diamondsteel_ingot.json
+54322370e7b8ce5f7ac01464512df6c8d02b95d3 assets/enhancedsmithing/models/item/vibronite_axe.json
+d7f6139531451243553e217ed666c27c01ec09c0 assets/enhancedsmithing/models/item/vibronite_boots.json
+42961d6768cb7038282c95d6af69a58c872abd52 assets/enhancedsmithing/models/item/vibronite_chestplate.json
+1959d3a3f83ddf03e3e1784a12c2cb3f2cf7980b assets/enhancedsmithing/models/item/vibronite_helmet.json
+8840e443fd8f6c8bf6b0eef62106760b02781a46 assets/enhancedsmithing/models/item/vibronite_hoe.json
+4da4b37b4df96367029b4abc756adf3e3e9ecfc3 assets/enhancedsmithing/models/item/vibronite_ingot.json
+8224b4117d3a91fecf194ec5e1e81edccdb7accf assets/enhancedsmithing/models/item/vibronite_leggings.json
+9533af99001018c086d49f690e086c195a0c68e3 assets/enhancedsmithing/models/item/vibronite_nugget.json
+14ba58b75e8c2e292890ac194e9493be87814b0d assets/enhancedsmithing/models/item/vibronite_pickaxe.json
+3db4f076111fc2cb0667f658a6325fa71be54cdf assets/enhancedsmithing/models/item/vibronite_shovel.json
+f027989d92112a0b8dc0f6ba1f9c9b8d1b973af6 assets/enhancedsmithing/models/item/vibronite_sword.json
+ee8d618f91dce135964a9edb351183030a784904 assets/enhancedsmithing/models/item/vibronite_upgrade_smithing_template.json

@@ -16,6 +16,8 @@ public class ItemModelGenerator extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+
         basicItem(Registration.VIBRONITE_INGOT.get());
         basicItem(Registration.VIBRONITE_NUGGET.get());
         basicItem(Registration.IMPREGNATED_DIAMONDSTEEL_INGOT.get());

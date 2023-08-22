@@ -18,5 +18,7 @@ public class Datagen {
 
         generator.addProvider(event.includeServer(), new RecipeGenerator(packOutput));
         generator.addProvider(event.includeServer(), new ItemModelGenerator(packOutput, efh));
+        generator.addProvider(event.includeServer(), new BlockModelGenerator(packOutput, efh));
+        generator.addProvider(event.includeServer(), new BlockStateGenerator(packOutput, efh));
     }
 }

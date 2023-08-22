@@ -1,5 +1,6 @@
 package com.annabellelewis.enhancedsmithing;
 
+import com.annabellelewis.enhancedsmithing.block.ImpregnatedDiamondsteelBlock;
 import com.annabellelewis.enhancedsmithing.item.*;
 import com.annabellelewis.enhancedsmithing.item.armor.EnhancedArmorItem;
 import com.annabellelewis.enhancedsmithing.item.armor.EnhancedDyeableArmorItem;
@@ -16,12 +17,19 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Supplier;
 
 
 public class Registration {
@@ -32,6 +40,7 @@ public class Registration {
     public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> GLOBAL_LOOT_MODIFIERS = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, EnhancedSmithing.MODID);
     public static final DeferredRegister<RecipeSerializer<?>> RECIPES = DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, EnhancedSmithing.MODID);
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EnhancedSmithing.MODID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(Registries.BLOCK, EnhancedSmithing.MODID);
 
     public static final RegistryObject<Item> ENH_STONE_PICKAXE = OVERRIDEITEMS.register(
             "stone_pickaxe",
@@ -411,6 +420,16 @@ public class Registration {
             () -> new Item(new Item.Properties())
     );
 
+    // Register blocks
+    public static final RegistryObject<Block> IMPREGNATED_DIAMONDSTEEL_BLOCK = registerBlock(
+            "impregnated_diamondsteel_block",
+            () -> new ImpregnatedDiamondsteelBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK))
+    );
+    public static final RegistryObject<Block> ROUGH_VIBRONITE_BLOCK = registerBlock(
+            "rough_vibronite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SCULK))
+    );
+
     // Register loot modifiers
     public static final RegistryObject<Codec<ChestGenModifier>> CHEST_GEN_MODIFIER = GLOBAL_LOOT_MODIFIERS.register(
             "loot_chest_gen",
@@ -432,12 +451,23 @@ public class Registration {
             .build()
     );
 
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
+        RegistryObject<T> newBlock = BLOCKS.register(name, block);
+        registerBlockItem(name, newBlock);
+        return newBlock;
+    }
+
+    private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
+        return ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
     public static void init(IEventBus modEventBus) {
         ITEMS.register(modEventBus);
         OVERRIDEITEMS.register(modEventBus);
         GLOBAL_LOOT_MODIFIERS.register(modEventBus);
         RECIPES.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
+        BLOCKS.register(modEventBus);
     }
 
     static void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -473,6 +503,8 @@ public class Registration {
             event.accept(AMETHYST_LEGGINGS);
             event.accept(AMETHYST_BOOTS);
             event.accept(IMPREGNATED_DIAMONDSTEEL_INGOT);
+            event.accept(IMPREGNATED_DIAMONDSTEEL_BLOCK);
+            event.accept(ROUGH_VIBRONITE_BLOCK);
             event.accept(VIBRONITE_INGOT);
             event.accept(VIBRONITE_NUGGET);
             event.accept(VIBRONITE_AXE);
